@@ -35,10 +35,10 @@ dttime = datetime.utcfromtimestamp(last_update).strftime('%Y-%m-%d %H:%M:%S')
 
 #-----------------------------------------------------#
 
-st.header('Hello 🌎! Here is the chart: of your temperature and humidity:')
+st.header('Hello 🌎! Here is the chart: of Sardor`s room temperature and humidity:')
 if st.button('Update'):
     st.balloons()
-    st.header(dttime)
+    st.header("Last updated time based in Greenwich, London, UK: ", dttime)
     st.table(table_tail)
     st.line_chart(main_df)
 
