@@ -36,7 +36,6 @@ dttime = datetime.utcfromtimestamp(last_update).strftime('%Y-%m-%d %H:%M:%S')
 #-----------------------------------------------------#
 
 st.header('Hello 🌎! Here is the chart: of your temperature and humidity:')
-st.table(table_tail)
 if st.button('Update'):
     st.balloons()
     st.header(dttime)
